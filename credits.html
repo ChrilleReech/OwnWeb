@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+ <section class="header">
+    <nav>
+        
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="doljMeny()"></i>
+            <ul>
+                <li><a href="index.html">START SIDA</a></li>
+                <li><a href="om.html">OM</a></li>
+                <li><a href="kan.html">KAN</a></li>
+                <li><a href="mal.html">MÅL</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="visaMeny()"></i>
+    </nav>
+
+<div class="credits-info">
+    <p>(WORK IN PROGRESS!)</p>
+    <h4>Credits To:</h4>
+    <p>Namn / länk!</p>
+    <p>Namn / länk!</p>
+    <p>Namn / länk!</p>
+    
+</div>
+
+ </section>   
+<!-- Länk till bla FB och Instargam, även Credits -->
+<section class="lank">
+    <h3>Länks till Sociala Media</h3>
+    <img src="bilder/facebook.png"> <a href="https://www.facebook.com/profile.php?id=100009086236755" target="_blank">Facebook</a>
+    <img src="bilder/instagram.webp"> <a href="https://www.instagram.com/chrillereech/" target="_blank">Instagram</a>
+
+</section>
+
+
+
+
+<!-- JS för meny -->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  
+  function visaMeny(){
+      navLinks.style.right = "0";
+  }
+  function doljMeny(){
+      navLinks.style.right = "-200px";
+  }
+
+</script>
+
+</body>
+</html>

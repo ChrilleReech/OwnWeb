@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strives</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+ <section class="om-header">
+    <nav>
+        <a href=""><img src="bilder/bild1.jpeg"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="doljMeny()"></i>
+            <ul>
+                <li><a href="index.html">START SIDA</a></li>
+                <li><a href="om.html">OM</a></li>
+                <li><a href="kan.html">KAN</a></li>
+                <li><a href="mal.html">MÅL</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="visaMeny()"></i>
+    </nav>
+
+
+    <section class="footer">
+        <h4>Mina Mål</h4>
+    
+    </section>
+    
+    <section class="om-mig">
+        <div class="rad">
+            <div class="rad-col">
+                <p>(WORK IN PROGRESS!)</p>
+                <h1>Mina Kortsiktiga Mål?</h1>
+                <p>Här kommer det stå lite saker <br> eller <br> något!
+
+                <h1>Mina Långsiktiga Mål?</h1>
+                <p>Här kommer det att stå lite annat.</p>
+            </div>
+        
+        </div>
+
+    </section>
+
+<!-- JS för meny -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function visaMeny(){
+        navLinks.style.right = "0";
+    }
+    function doljMeny(){
+        navLinks.style.right = "-200px";
+    }
+  
+  </script>
+
+</body>
+</html>
