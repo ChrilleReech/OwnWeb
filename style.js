@@ -8,9 +8,27 @@ function doljMeny(){
     navLinks.style.right = "-200px";
 }
 
-// ---- Bilder Zoom - scale down ---- //
+// ---- Bilder Zoom - scale down (on click) ---- //
+window.onload = () => {
+    let all = document.getElementsByClassName("zoomD"),
+     lightbox = document.getElementById("lightbox");
+   
+    if (all.length>0) { for (let i of all) {
+      i.onclick = () => {
+        let clone = i.cloneNode();
+        clone.className = "";
+        lightbox.innerHTML = "";
+        lightbox.appendChild(clone);
+        lightbox.className = "show";
+      };
+    }}
 
-// https://code-boxx.com/image-zoom-css-javascript/ 
+    lightbox.onclick = () => {
+      lightbox.className = "hide";
+    };
+  };
+
+
 
 
 

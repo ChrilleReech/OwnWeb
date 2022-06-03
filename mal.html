@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strives</title>
+    <title>STRIVES</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,9 @@
 <body>
  <section class="om-header">
     <nav>
-        <a href=""><img src="bilder/bild1.jpeg"></a>
+        <div id="lightbox"></div>
+        <img src="bilder/bild11.jpg" class="zoomD">
+
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="doljMeny()"></i>
             <ul>
@@ -43,25 +46,18 @@
                 <p>Här kommer det stå lite saker <br> eller <br> något!
 
                 <h1>Mina Långsiktiga Mål?</h1>
-                <p>Här kommer det att stå lite annat.</p>
+                <p>Här kommer det att stå lite <br> annat.</p>
             </div>
-        
+            <div class="rad-bild">
+                <img src="bilder/bild11.jpg">
+            </div>
         </div>
 
     </section>
 
-<!-- JS för meny -->
-<script>
-    var navLinks = document.getElementById("navLinks");
-    
-    function visaMeny(){
-        navLinks.style.right = "0";
-    }
-    function doljMeny(){
-        navLinks.style.right = "-200px";
-    }
-  
-  </script>
+
+
+<script src="style.js"></script>
 
 </body>
 </html>

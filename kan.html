@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,9 @@
 <body>
  <section class="om-header">
     <nav>
-        <a href=""><img src="bilder/bild1.jpeg"></a>
+        <div id="lightbox"></div>
+        <img src="bilder/bild1.jpeg" class="zoomD">
+
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="doljMeny()"></i>
             <ul>
@@ -45,23 +48,17 @@
                <h1>Saker jag Gjort?</h1>
                <p>Samma här!</p>
             </div>
+            <div class="rad-bild">
+                <img src="bilder/bild1.jpeg">
+            </div>
         
         </div>
 
     </section>
 
-<!-- JS för meny -->
-<script>
-    var navLinks = document.getElementById("navLinks");
+
     
-    function visaMeny(){
-        navLinks.style.right = "0";
-    }
-    function doljMeny(){
-        navLinks.style.right = "-200px";
-    }
-  
-  </script>
+<script src="style.js"></script>
 
 </body>
 </html>

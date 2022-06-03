@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +17,9 @@
 <body>
  <section class="credits-header">
     <nav>
-        <img src="bilder/bild12-1.jpg">
+        <div id="lightbox"></div>
+            <img src="bilder/bild12-1.jpg" class="zoomD"/>
         
-
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="doljMeny()"></i>
             <ul>
@@ -50,20 +51,7 @@
 </section>
 
 
-
-
-<!-- JS för meny -->
-<script>
-  var navLinks = document.getElementById("navLinks");
-  
-  function visaMeny(){
-      navLinks.style.right = "0";
-  }
-  function doljMeny(){
-      navLinks.style.right = "-200px";
-  }
-
-</script>
+<script src="style.js"></script>
 
 </body>
 </html>

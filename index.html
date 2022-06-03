@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +17,8 @@
 <body>
  <section class="header">
     <nav>
-        <img src="bilder/bild7.jpg">
-        
-        <!--<button onclick="resetImg()">X</button>-->
+        <div id="lightbox"></div>
+          <img src="bilder/bild7.jpg" class="zoomD">
 
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="doljMeny()"></i>
@@ -34,7 +34,7 @@
 
 <div class="snabb-info">
     <h1>Välkommen Till Min Hemsida!</h1>
-    <p>På den här hemsidan hittar du lite smått som:<br>Saker jag kan, gjort och mina mål. Du ser också denna sidan som jag gjort genom CSS och HTML.</p>
+    <p>På den här hemsidan hittar du lite smått som:<br>Saker jag kan, gjort och mina mål. Du ser också denna sidan som jag gjort genom CSS, HTML och JavaScript.</p>
 
 </div>
 
@@ -51,21 +51,9 @@
 
 </section>
 
+<script src="style.js"></script>
 
 
-
-<!-- JS för meny -->
-<script>
-  var navLinks = document.getElementById("navLinks");
-  
-  function visaMeny(){
-      navLinks.style.right = "0";
-  }
-  function doljMeny(){
-      navLinks.style.right = "-200px";
-  }
-
-</script>
 
 </body>
 </html>
