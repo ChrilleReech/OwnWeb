@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "name": "newprojekt1",
+  "version": "1.0.0",
+  "main": "myApp.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node myApp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrilleReech/OwnWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrilleReech/OwnWeb/issues"
+  },
+  "homepage": "https://github.com/ChrilleReech/OwnWeb#readme",
+  "description": ""
+}
