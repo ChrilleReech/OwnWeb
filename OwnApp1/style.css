@@ -281,6 +281,42 @@ p{
     animation: rotation 12s infinite linear;
     border-radius: 1000px;
 }
+.credits-info h4{
+    text-align: left;
+    color: hsl(203, 92%, 75%, 0.720);
+    margin-top: 50px;
+    padding-left: 5%;
+    font-size: 55px;
+}
+.credits-info h5{
+    text-align: left;
+    color: hsl(203, 92%, 75%, 0.88);
+    margin-top: 30px;
+    padding-left: 25%;
+    font-size: 35px;
+}
+.credits-info p{
+    text-align: left;
+    color: whitesmoke;
+    margin-top: 35px;
+    padding-left: 30%;
+    font-size: 20px;
+}
+.credits-info a{
+    color: lightskyblue;
+    margin-top: 18px;
+    font-size: 23px;
+    padding-left: 10px;
+}
+@media(max-width: 700px){
+    .credits-info p{
+        margin-left: 20px;
+    }
+    .credits-info h4{
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+}
 
 @keyframes rotation {
     from {
@@ -345,6 +381,9 @@ p{
         margin-left: 5.5vh;
         margin-right: 15vh;
         
+    }
+    .credits-info p{
+        padding-left: 10%;
     }
 
 }
