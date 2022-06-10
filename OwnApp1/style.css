@@ -33,6 +33,7 @@ nav img{
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    z-index: 999;
 }
 .nav-links ul li a{
     color: whitesmoke;
@@ -225,13 +226,36 @@ p{
     padding-left: 22%;
     padding: auto;
     position: absolute;
-    bottom: 24rem;
+    bottom: 60rem;
     opacity: 88%;
     border-radius: 8px;
     object-fit: contain;
 }
 .footer h4{
     text-align: left;
+}
+.rad-one img{    
+    width: 25%;
+    height: 80%;
+    padding-left: 22%;
+    padding: auto;
+    position: absolute;
+    bottom: 60rem;
+    opacity: 88%;
+    border-radius: 8px;
+    object-fit: contain;
+
+}
+.rad-two img{
+    width: 25%;
+    height: 35%;
+    padding-left: 22%;
+    padding: auto;
+    position: absolute;
+    bottom: 30rem;
+    opacity: 88%;
+    border-radius: 8px;
+    object-fit: contain;
 }
 
 /* ----- För mobil format (om.html) ----- */
@@ -263,6 +287,16 @@ p{
         display: block;
         border-radius: 10px;
     
+    }
+    .rad-one img{
+        display: none;
+    }
+    .rad-two img{
+        display: none;
+    }
+    #zoomB{
+        height: 18vh;
+        width: 100px;
     }
     
 }
